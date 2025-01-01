@@ -25,14 +25,14 @@ def subFunc_AutoMultiPrint(*inVs: str, inTitle=None, inLambda=lambda v: v):
         if counter != 0:
             print("  |  ", end="")
         counter += 1
-        content1 = f"{v}"
-        content2 = (
+        content1 = (
             f"{intervals}{inTitle}{theSymbolBetweenTheKeyAndTheValue}{inLambda(v)}"
             if inTitle != None
             else ""
         )
+        content2 = f"{v}"
         print(
-            f"{content1}{content2}",
+            f"{content1} {content2}",
             end="",
         )
     print()
