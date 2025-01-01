@@ -1,0 +1,15 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python 调试程序: 当前文件", //这个字段定义了调试配置的名称，它显示在VS Code的调试配置下拉菜单中。这个名称表明这个配置是用于调试当前打开的Python文件的。
+            "type": "debugpy", //这个字段指定了调试器的类型。debugpy是Python的一个调试库，由Python官方团队开发，用于替代旧的ptvsd库。它允许开发者在VS Code中调试Python代码。
+            "request": "launch", //这个字段指定了调试会话的类型。"launch"意味着这是一个启动类型的调试会话，即VS Code会启动一个程序进行调试。与之对应的还有"attach"类型，用于附加到一个已经在运行的进程上进行调试。
+            "program": "${file}", //这个字段指定了要调试的程序或脚本的路径。${file}是一个变量，它会被替换为当前在VS Code中打开的文件的路径。这意味着无论当前打开的是哪个Python文件，使用这个配置都会调试那个文件。
+            "console": "integratedTerminal" //这个字段指定了调试会话的控制台类型。"integratedTerminal"意味着调试输出会显示在VS Code的集成终端中。集成终端是VS Code内置的一个命令行界面，允许用户运行命令和查看输出。
+        }
+    ]
+}
