@@ -14,12 +14,14 @@ def 装饰器方法B(inFunc):
     return innerFunc
 
 
-# 靠近函数的装饰器优先
 @装饰器方法B
 @装饰器方法A
 def comment():
-    return "hahaha"
+    return "ha"
 
 
 if __name__ == "__main__":
     print(comment())
+    # 装饰器B
+    # 装饰器A
+    # <B><A>ha<A><B>
